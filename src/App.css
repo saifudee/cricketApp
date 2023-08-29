@@ -1,0 +1,389 @@
+#root{
+  overflow-x: hidden;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #3498db; /* Accent color */
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.title::before {
+  margin-left: 0;
+}
+
+.title::after {
+  margin-right: 0;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust background color as needed */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  /* Add other styling as needed */
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container-sm{
+  max-width:100%;
+  background-color:rgba(255, 0, 0, 0.389);
+}
+.navbar{
+  background-color: rgba(255, 0, 0, 0.389);
+}
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul.navbar li {
+  float: left;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.container{
+  max-width: 100%;
+  color: #fff;
+  background-color: #333;
+}
+.start{
+  text-align:justify;
+  margin: 0%;
+}
+
+.about,
+.contact,
+.address {
+  flex-basis: calc(33.33% - 20px);
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+ul.navbar li a:hover {
+  background-color:#555;
+}
+.carousel .imgsize{
+  width: 40%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.logo {
+  padding: 8px 16px; 
+}
+
+.logo img {
+  width: 70px; 
+  height: auto;
+}
+.banner {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.banner-text {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 50%; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.col p{
+  width:30rem;
+}
+
+.logo img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+.image-card {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.Banner2 {
+  background-color: rgba(255, 0, 0, 0.389);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0% ;
+}
+
+.Banner2 ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.contact-map {
+  flex: 1;
+}
+
+/* Adjust styles as needed */
+
+.Banner2 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Banner2 h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.fab.fa-instagram {
+  
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px); 
+  margin-bottom: 20px; 
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 412px) {
+ .carousel .imgsize{
+  width:100%;
+  display: inline-block;
+  pointer-events: none;
+  height: 100%;
+}
+.carousel{
+  padding-right:0rem;
+  max-width:100%;
+}
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info,
+.contact-map {
+  flex: none;
+  width: 100%;
+  padding: 0;
+}
+
+.contact-map {
+  margin-top: 20px;
+}
+iframe{
+width:350px;
+height:300px;
+}
+.about-container {
+  flex-direction: column;
+  text-align:justify;
+}
+.contact2{
+  padding:0rem;
+}
+
+.contact3{
+padding-left:0rem;
+}
+.about-content {
+  padding-right: 0;
+}
+
+.about-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Banner2 h1{
+  margin-right:0rem;
+}
+  .card-images {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .container-sm{
+    padding-left: 2%;
+  }
+  .card {
+    flex-basis: calc(100% - 20px); 
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.auto-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-image {
+  max-width: 100%;
+  max-height: 400px;
+  animation: fadeInOut 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 412px) {
+  .row{
+    padding: 2%;
+    margin: 0%;
+  }
+  .col p{
+    width:22rem;
+  }
+}
+
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
